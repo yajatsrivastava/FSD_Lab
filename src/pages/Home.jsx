@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import bannerImg from '../assets/hero.png';
+import bannerImg from '../assets/banner.png';
 import profileImg from '../assets/profile.jpeg';
 
 export default function Home() {
