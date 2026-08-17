@@ -93,6 +93,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateZ(0); /* Prevents backdrop-filter flicker in Chrome */
+  will-change: transform;
 }
 
 .nav-links {

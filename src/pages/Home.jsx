@@ -1,37 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import bannerImg from '../assets/banner.png';
+import profileImg from '../assets/profile.jpeg';
+
 export default function Home() {
   return (
     <div className="home-container">
-      {/* 1. Header Banner */}
+      {/* Banner */}
       <div className="hero-banner-wrapper">
         <img 
-          src="/banner.png" 
+          src={bannerImg} 
           alt="Minesweeper Banner" 
           className="hero-banner-img"
-          onError={(e) => {
-            e.target.onerror = null;
-            e.target.src = 'https://via.placeholder.com/1200x250/2e7d32/ffffff?text=Minesweeper+Grid+Banner';
-          }}
         />
       </div>
 
-      {/* 2. Overlapping Circular Profile Picture */}
+      {/* Profile Section */}
       <div className="profile-header-section">
         <div className="avatar-container">
           <img 
-            src="/profile.jpeg" 
+            src={profileImg} 
             alt="Yajat Srivastava" 
             className="hero-avatar"
-            onError={(e) => {
-              e.target.onerror = null;
-              e.target.src = 'https://via.placeholder.com/160/cccccc/0f172a?text=Yajat';
-            }}
           />
         </div>
 
-        {/* 3. Main Title & Subtitle */}
         <div className="hero-text-details">
           <h1>Hi, I'm <span className="highlight">Yajat Srivastava</span></h1>
           <p className="sub-tagline">
@@ -40,7 +34,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Quick Links / Content Below Header */}
+      {/* Bio Card */}
       <div className="hero-bio-card info-card" style={{ marginTop: '2rem' }}>
         <h3>Welcome to my Portfolio</h3>
         <p style={{ marginTop: '0.5rem', color: 'var(--text-muted)' }}>
